@@ -27,7 +27,7 @@ df = df[df["owner"] != 5]
 # Initialize the app - incorporate a Dash Bootstrap theme
 external_stylesheets = [dbc.themes.JOURNAL]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
-
+server==app.serve
 # Create app layout
 app.layout = html.Div([
         html.H1("Selling car price prediction"),
